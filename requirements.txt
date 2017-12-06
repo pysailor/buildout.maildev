@@ -1,9 +1,5 @@
 appdirs==1.4.2
 packaging==16.8
-pip==9.0.1
-pkg-resources==0.0.0
 pyparsing==2.1.10
-setuptools==34.3.0
 six==1.10.0
-wheel==0.30.0a0
-zc.buildout==2.8.0
+zc.buildout==2.10.0
