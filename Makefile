@@ -8,5 +8,8 @@ py3/bin/buildout: py3/bin/pip3 requirements.txt
 py3/bin/pip3:
 	python3 -m venv py3
 
-.installed.cfg: py3/bin/buildout buildout.cfg
+custom.cfg:
+	[ -e custom.cfg ] || touch custom.cfg
+
+.installed.cfg: py3/bin/buildout buildout.cfg custom.cfg
 	./py3/bin/buildout

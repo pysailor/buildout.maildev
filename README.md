@@ -1,3 +1,3 @@
 # maildev.buildout
 
-Install and configure https://github.com/djfarrelly/MailDev
+Installs and configures https://github.com/djfarrelly/MailDev
