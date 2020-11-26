@@ -2,11 +2,11 @@
 
 all: .installed.cfg
 
-bin/buildout: bin/pip requirements.txt
-	./bin/pip install -IUr requirements.txt
+py3/bin/buildout: py3/bin/pip3 requirements.txt
+	./py3/bin/pip3 install -IUr requirements.txt
 
-bin/pip:
-	virtualenv -p python2.7 --no-site-packages .
+py3/bin/pip3:
+	python3 -m venv py3
 
-.installed.cfg: bin/buildout buildout.cfg
-	./bin/buildout
+.installed.cfg: py3/bin/buildout buildout.cfg
+	./py3/bin/buildout
